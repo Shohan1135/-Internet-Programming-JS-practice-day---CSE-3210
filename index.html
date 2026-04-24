@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment 3 - JS</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<div class="container">
+  <div>
+    <div class="card">
+      <input type="text" id="calcDisplay" class="display" disabled>
+
+      <div class="buttons">
+        <button onclick="append('7')">7</button>
+        <button onclick="append('8')">8</button>
+        <button onclick="append('9')">9</button>
+        <button class="operator" onclick="append('/')">/</button>
+        <button onclick="backspace()" style="background: #f2e5c4;
+border: 2px solid #a08f6a;
+color: #5c4b2e;"><b>←</b></button>
+
+
+        <button onclick="append('4')">4</button>
+        <button onclick="append('5')">5</button>
+        <button onclick="append('6')">6</button>
+        <button class="operator" onclick="append('*')">*</button>
+        <button class="clear" style="background: #e4b4b4;
+border: 2px solid #8b5a5a;
+color: #4a2a2a;" onclick="clearDisplay()">C</button>
+
+        <button onclick="append('1')">1</button>
+        <button onclick="append('2')">2</button>
+        <button onclick="append('3')">3</button>
+        <button class="operator" onclick="append('-')">-</button>
+        <button class="equal" onclick="calculate()" style="grid-row: span 2; background: #cfe8cf;
+border: 2px solid #6f8f6f;
+color: #2f4f2f;">=</button>
+
+
+        <button onclick="append('0')">0</button>
+        <button onclick="append('.')">.</button>
+        <button onclick="sqrt()">√</button>
+        <button class="operator" onclick="append('+')">+</button>
+      </div>
+    </div>
+        <h2 style="text-align: center; margin-top: 10px; color: rgb(64, 64, 64);">Calculator</h2>
+  </div>
+
+
+  <div>
+        <div class="timer-card">
+          <div id="timer" class="timer-display">00:00:00:00</div>
+
+          <div class="timer-buttons">
+            <button onclick="startTimer()" style="background: #cfe8cf;
+border: 2px solid #6f8f6f;
+color: #2f4f2f;">Start</button>
+            <button onclick="pauseTimer()" style="background: #f2e5c4;
+border: 2px solid #a08f6a;
+color: #5c4b2e;">Pause</button>
+            <button onclick="resetTimer()" style="background: #e4b4b4;
+border: 2px solid #8b5a5a;
+color: #4a2a2a;">Reset</button>
+          </div>
+        </div>
+        <h2 style="text-align: center; margin-top: 10px; color: rgb(64, 64, 64);">Timer</h2>
+  </div>
+
+
+
+</div>
+
+<script src="js/functions.js"></script>
+</body>
+</html>
